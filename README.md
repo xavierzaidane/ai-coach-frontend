@@ -20,12 +20,12 @@ A clean, modern, and professional web dashboard with a soft color palette, desig
 
 ## Features
 
-* ✅ **Light and Dark Mode**: Elegant color palette for professional dashboards
-* ✅ **Soft Blue & Green Accents**: Convey trust, progress, and clarity
-* ✅ **Responsive Layout**: Optimized for desktop, tablet, and mobile
-* ✅ **Chart-Ready Variables**: Coordinated color variables for easy data visualization
-* ✅ **Minimal Shadows & Rounded Cards**: Clean, airy, Apple-style UI
-* ✅ **Customizable CSS Variables**: Quick theming using `:root` and `.dark`
+* **Light and Dark Mode**: Elegant color palette for professional dashboards
+* **Soft Blue & Green Accents**: Convey trust, progress, and clarity
+* **Responsive Layout**: Optimized for desktop, tablet, and mobile
+* **Chart-Ready Variables**: Coordinated color variables for easy data visualization
+* **Minimal Shadows & Rounded Cards**: Clean, airy, Apple-style UI
+* **Customizable CSS Variables**: Quick theming using `:root` and `.dark`
 
 ---
 
