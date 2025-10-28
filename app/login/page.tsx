@@ -26,7 +26,7 @@ export default function LoginPage({ onLogin, isLoading = false }: LoginPageProps
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted/30 px-4 py-8 pt-24">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted/30 px-2 py-5 pt-2">
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#f0f9ff_1px,transparent_1px),linear-gradient(to_bottom,#f0f9ff_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)] opacity-20"></div>
       
       <Card className="w-full max-w-md border-border/40 bg-card/50 backdrop-blur-sm shadow-xl">

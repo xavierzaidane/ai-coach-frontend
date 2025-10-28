@@ -61,7 +61,7 @@ export default function WelcomeSection({ user: propUser }: WelcomeSectionProps) 
     <motion.div
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.10, ease: "easeOut" }}
       className="relative z-10 flex items-center justify-between bg-gradient-to-br from-primary/10 via-primary/5 to-background rounded-3xl p-8 border border-primary/20 mb-12 overflow-hidden"
     >
 
@@ -104,7 +104,7 @@ export default function WelcomeSection({ user: propUser }: WelcomeSectionProps) 
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
+        transition={{ duration: 0.10, delay: 0.3 }}
         whileHover={{ scale: 1.05, rotate: 1 }}
         className="lg:flex hidden items-center justify-center size-32 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full relative z-10"
       >

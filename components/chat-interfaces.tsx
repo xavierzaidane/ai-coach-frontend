@@ -22,7 +22,7 @@ interface ChatSession {
   createdAt: string;
 }
 
-/* --------------------------- Mock data --------------------------- */
+/* ------------ Mock data ---------- */
 const nowIso = () => new Date().toISOString();
 
 const initialSessions: ChatSession[] = [
@@ -42,7 +42,6 @@ const initialSessions: ChatSession[] = [
   },
 ];
 
-/* -------------------------- Utilities ---------------------------- */
 const formatTime = (iso: string) => {
   try {
     return new Date(iso).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
@@ -51,7 +50,6 @@ const formatTime = (iso: string) => {
   }
 };
 
-/* ------------------------- Subcomponents ------------------------- */
 function TypingIndicator() {
   return (
     <div className="flex items-center gap-1">
@@ -176,13 +174,15 @@ export default function ChatInterface() {
   useEffect(() => {
     scrollToBottom();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sessions, streamingMessage, isTyping]);
+  }, [ streamingMessage, isTyping]);
 
   const currentSession = sessions.find((s) => s.id === currentSessionId) || sessions[0];
 
-  function scrollToBottom() {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+function scrollToBottom() {
+  if (messagesEndRef.current) {
+    messagesEndRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
   }
+}
 
   function createNewSession() {
     const newS: ChatSession = { id: Date.now().toString(), title: "New conversation", messages: [
@@ -254,7 +254,6 @@ export default function ChatInterface() {
     }
   }
 
-  /* --------------------------- Render UI --------------------------- */
   return (
     <div className="flex h-[720px] w-full max-w-[1200px] mx-auto bg-background rounded-2xl shadow-sm border border-border/50 overflow-hidden" role="application" aria-label="AI Athlete Chat Interface">
       <Sidebar

@@ -31,7 +31,19 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${robotoMono.variable} antialiased`}
       >
-        <Toaster richColors position="top-center" />
+        <Toaster
+          position="top-center"
+          richColors
+          toastOptions={{
+            classNames: {
+              toast:
+                "border rounded-xl shadow-lg bg-white/80 dark:bg-neutral-900/90 text-neutral-900 dark:text-neutral-100 backdrop-blur-lg",
+              success: "bg-green-500 text-white",
+              error: "bg-rose-500 text-white",
+            },
+          }}
+        />
+
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

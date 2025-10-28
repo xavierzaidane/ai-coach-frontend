@@ -16,7 +16,7 @@ function Dashboard({ user }: DashboardProps) {
       <WelcomeSection />
       <MainActions />
       <ActivityOverview />
-      <div className="mt-10"><Footer/></div>
+      
     </div>
     </>
   );

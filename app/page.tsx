@@ -1,17 +1,22 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import Navbar from "@/components/home/Navbar";
 import Dashboard from "@/components/home/Dashboard";
 import LoginPage from "./login/page";
+import Footer from "@/components/home/Footer";
+import { motion, useInView } from "framer-motion";
+
 
 export default function HomePage() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
   const [user, setUser] = useState<{ name: string; email: string } | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
+  const footerRef = useRef(null);
+  const isFooterInView = useInView(footerRef, { once: true, margin: "-100px" });
 
   useEffect(() => {
     const checkAuth = () => {
@@ -109,6 +114,8 @@ export default function HomePage() {
     );
   }
 
+  
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar 
@@ -123,6 +130,7 @@ export default function HomePage() {
           <Dashboard user={user} />
         )}
       </main>
+      <Footer/>
     </div>
   );
 }
