@@ -19,8 +19,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-muted-foreground max-w-md">
-              AI-powered sports coach. Get personalized training plans, <p>track your performance, and push your actual limits.</p>
-            </p>
+                AI-powered sports coach. Get personalized training plans, track your performance, and push your actual limits.
+              </p>
           </div>
 
           {/* Links Section */}
