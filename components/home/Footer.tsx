@@ -19,8 +19,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-muted-foreground max-w-md">
-              AI-powered resume optimization and career guidance platform. 
-              Build better resumes, discover opportunities, and advance your career.
+              AI-powered sports coach. Get personalized training plans, <p>track your performance, and push your actual limits.</p>
             </p>
           </div>
 
