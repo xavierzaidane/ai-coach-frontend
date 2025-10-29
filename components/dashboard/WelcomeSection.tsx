@@ -115,3 +115,6 @@ export default function WelcomeSection({ user: propUser }: WelcomeSectionProps) 
     </motion.div>
   );
 }
+
+
+
