@@ -104,12 +104,12 @@ export default function WelcomeSection({ user: propUser }: WelcomeSectionProps) 
       <motion.div
         className="hidden lg:flex items-end justify-center absolute bottom-0 right-8"
       >
-        <Image 
-          src="/FITNESS.png" 
-          alt="AI Fitness Coach" 
-          width={300} 
-          height={300} 
-          className="w-44 h-44 object-contain drop-shadow-lg" 
+        <Image
+          src="/FITNESS.png"
+          alt="AI Fitness Coach"
+          width={300}
+          height={300}
+          className="w-44 h-44 object-contain drop-shadow-lg"
         />
       </motion.div>
     </motion.div>
