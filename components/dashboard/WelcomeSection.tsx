@@ -102,13 +102,15 @@ export default function WelcomeSection({ user: propUser }: WelcomeSectionProps) 
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.10, delay: 0.3 }}
-        whileHover={{ scale: 1.05, rotate: 1 }}
-        className="lg:flex hidden items-center justify-center size-32 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full relative z-10"
+        className="hidden lg:flex items-center justify-center"
       >
-        <Image src="/Union.png" alt="DentWise" width={64} height={64} className="w-16 h-16" />
+        <Image 
+          src="/FITNESS.png" 
+          alt="AI Fitness Coach" 
+          width={200} 
+          height={200} 
+          className="w-48 h-48 object-contain drop-shadow-lg" 
+        />
       </motion.div>
     </motion.div>
   );

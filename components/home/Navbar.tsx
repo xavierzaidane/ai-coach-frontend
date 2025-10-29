@@ -55,7 +55,7 @@ export default function Navbar({ user, onLogout, isLoading = false }: NavbarProp
                 onClick={handleChatNavigation}
                 size="sm"
                 variant="default"
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 bg-primary hover:bg-secondary text-white transition-colors"
                 disabled={isLoading}
               >
                 <BotMessageSquare className="h-4 w-4" />
